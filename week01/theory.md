@@ -22,7 +22,7 @@ enum Color
     YELLOW = 6, // = 6
     PURPLE,     // = 7
     BLACK       // = 8
-}
+};
 ```
 Инициализират се както нормални променливи, *НО* стойността, която даваме може да е само една от изброените в групата!
 ```c++
@@ -129,8 +129,11 @@ void printPoint(const Point* p)
 
 int main() 
 {
-    Point p;
+    // Point p;
+    Point* p = new Point;
+    // setPoint(&p);
     setPoint(p);
+    // printPoint(&p);
     printPoint(p);
 
     return 0;
